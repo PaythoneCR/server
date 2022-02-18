@@ -10418,7 +10418,7 @@ if text == "صورتي" then
 if Redis:get(MEZO.."Status:photo"..msg.chat_id) then
 local photo = LuaTele.getUserProfilePhotos(msg.sender.user_id)
 local ban = LuaTele.getUser(msg.sender.user_id)
-local ban_ns = '𝚑𝚎𝚛𝚎 𝚊𝚛𝚎 𝚢𝚘𝚞𝚛 𝚙𝚑𝚘𝚝𝚘𝚜'
+local ban_ns = '🔎•●•●•●•●صورك●•●•●•●•🔍'
 if photo.total_count > 0 then
 data = {} 
 data.inline_keyboard = {
@@ -10426,7 +10426,7 @@ data.inline_keyboard = {
 {text = '- اخفاء الامر ', callback_data = msg.sender.user_id..'/ban88'}, 
 },
 {
-{text = '🔺 صورتك القادمه🔻', callback_data= msg.sender.user_id..'/ban1'}, 
+{text = '📈 • صورتك القادمه • 📉', callback_data= msg.sender.user_id..'/ban1'}, 
 },
 }
 local msgg = msg_id/2097152/0.5
@@ -10439,7 +10439,7 @@ if text == "تستو" then
 if Redis:get(MEZO.."Status:photo"..msg.chat_id) then
 local photo = LuaTele.getUserProfilePhotos(msg.sender.user_id)
 local ban = LuaTele.getUser(msg.sender.user_id)
-local ban_ns = '𝚑𝚎𝚛𝚎 𝚊𝚛𝚎 𝚢𝚘𝚞𝚛 𝚙𝚑𝚘𝚝𝚘𝚜'
+local ban_ns = '🔎•●•●•●•●صورك●•●•●•●•🔍'
 if photo.total_count > 0 then
 data = {} 
 data.inline_keyboard = {
@@ -10447,7 +10447,7 @@ data.inline_keyboard = {
 {text = '- اخفاء الامر ', callback_data = msg.sender.user_id..'/ban88'}, 
 },
 {
-{text = '🔺 صورتك القادمه🔻', callback_data= msg.sender.user_id..'/ban89'}, 
+{text = '📈 • صورتك القادمه • 📉', callback_data= msg.sender.user_id..'/ban89'}, 
 },
 }
 local msgg = msg_id/2097152/0.5
@@ -11802,7 +11802,7 @@ end
 end
 if text == "سمايلات" or text == "سمايل" then
 if Redis:get(MEZO.."MEZO:Status:Games"..msg.chat_id) then
-Random = {"🍏","🍎","🍐","🍊","🍋","🍉","🍇","🍓","🍈","🍒","🍑","🍍","🥥","🥝","🍅","🍆","🥑","🥦","🥒","🌶","🌽","🥕","🥔","🥖","🥐","🍞","🥨","🍟","🧀","🥚","🍳","🥓","🥩","🍗","??","🌭","🍔","🍠","🍕","🥪","🥙","☕️","🥤","🍶","🍺","🍻","🏀","⚽️","🏈","⚾️","🎾","🏐","🏉","🎱","🏓","🏸","🥅","🎰","🎮","🎳","🎯","🎲","🎻","🎸","🎺","🥁","🎹","🎼","🎧","🎤","🎬","??","🎭","🎪","🎟","🎫","🎗","🏵","🎖","🏆","🥌","🛷","🚗","🚌","🏎","🚓","🚑","🚚","🚛","🚜","⚔","🛡","🔮","??","💣"," ❍┃ ","📍","📓","📗","📂","📅","📪","📫"," ❍┃ ","📭","⏰","📺","🎚","☎️","📡"}
+Random = {"🍏","🍎","🍐","🍊","🍋","🍉","🍇","🍓","🍈","🍒","??","🍍","🥥","🥝","🍅","🍆","🥑","🥦","🥒","🌶","🌽","🥕","🥔","🥖","🥐","🍞","🥨","🍟","🧀","🥚","🍳","🥓","🥩","🍗","??","🌭","🍔","🍠","🍕","🥪","🥙","☕️","🥤","🍶","🍺","🍻","🏀","⚽️","🏈","⚾️","🎾","🏐","🏉","🎱","🏓","🏸","🥅","🎰","🎮","🎳","🎯","🎲","🎻","🎸","🎺","🥁","🎹","🎼","🎧","🎤","🎬","??","🎭","🎪","🎟","🎫","🎗","🏵","🎖","🏆","🥌","🛷","🚗","🚌","🏎","🚓","🚑","🚚","🚛","🚜","⚔","🛡","🔮","??","💣"," ❍┃ ","📍","📓","📗","📂","📅","📪","📫"," ❍┃ ","📭","⏰","📺","🎚","☎️","📡"}
 SM = Random[math.random(#Random)]
 Redis:set(MEZO.."MEZO:Game:Smile"..msg.chat_id,SM)
 return LuaTele.sendText(msg_chat_id,msg_id," ❍┃ اسرع واحد يدز هاذا السمايل ? ~ {`"..SM.."`}","md",true)  
@@ -13629,14 +13629,14 @@ if tonumber(IdUser) == tonumber(UserId) then
 local photo = LuaTele.getUserProfilePhotos(IdUser)
 local ban = LuaTele.getUser(IdUser)
 if photo.total_count > 0 then
-local ban_ns = '𝚑𝚎𝚛𝚎 𝚊𝚛𝚎 𝚢𝚘𝚞𝚛 𝚙𝚑𝚘𝚝𝚘𝚜'
+local ban_ns = '🔎•●•●•●•●صورك●•●•●•●•🔍'
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
 {text = '- اخفاء الامر ', callback_data =IdUser..'/delAmr'}, 
 },
 {
-{text = '🔺 صورتك القادمه🔻 ', callback_data =IdUser..'/ban1'},{text = '🔺 صورتك السابقه🔻 ', callback_data =IdUser..'/delAmr'}, 
+{text = '📈 • صورتك القادمه • 📉', callback_data =IdUser..'/ban1'},{text = '📈 • صورتك السابقه • 📉 ', callback_data =IdUser..'/delAmr'}, 
 },
 }
 LuaTele.deleteMessages(ChatId,{[1]= Msg_id})
@@ -13650,7 +13650,7 @@ if Text and Text:match('(%d+)/ban89') then
 local UserId = Text:match('(%d+)/ban89')
 if tonumber(IdUser) == tonumber(UserId) then
 local photo = LuaTele.getUserProfilePhotos(IdUser)
-local ban_ns = '𝚑𝚎𝚛𝚎 𝚊𝚛𝚎 𝚢𝚘𝚞𝚛 𝚙𝚑𝚘𝚝𝚘𝚜'
+local ban_ns = '🔎•●•●•●•●صورك●•●•●•●•🔍'
 if photo.total_count > 1 then
 GH = '* '..photo.photos[2].sizes[#photo.photos[1].sizes].photo.remote.id..'* '
 ban = JSON.encode(GH)
@@ -13672,14 +13672,14 @@ if tonumber(IdUser) == tonumber(UserId) then
 local photo = LuaTele.getUserProfilePhotos(IdUser)
 local ban = LuaTele.getUser(IdUser)
 if photo.total_count > 1 then
-local ban_ns = '𝚑𝚎𝚛𝚎 𝚊𝚛𝚎 𝚢𝚘𝚞𝚛 𝚙𝚑𝚘𝚝𝚘𝚜'
+local ban_ns = '🔎•●•●•●•●صورك●•●•●•●•🔍'
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
 {text = '- اخفاء الامر ', callback_data =IdUser..'/delAmr'}, 
 },
 {
-{text = '🔺 صورتك القادمه🔻 ', callback_data =IdUser..'/ban2'},{text = '🔺 صورتك السابقه🔻 ', callback_data =IdUser..'/ban0'}, 
+{text = '📈 • صورتك القادمه • 📉', callback_data =IdUser..'/ban2'},{text = '📈 • صورتك السابقه • 📉 ', callback_data =IdUser..'/ban0'}, 
 },
 }
 LuaTele.deleteMessages(ChatId,{[1]= Msg_id})
@@ -13695,14 +13695,14 @@ if tonumber(IdUser) == tonumber(UserId) then
 local photo = LuaTele.getUserProfilePhotos(IdUser)
 local ban = LuaTele.getUser(IdUser)
 if photo.total_count > 1 then
-local ban_ns = '𝚑𝚎𝚛𝚎 𝚊𝚛𝚎 𝚢𝚘𝚞𝚛 𝚙𝚑𝚘𝚝𝚘𝚜'
+local ban_ns = '🔎•●•●•●•●صورك●•●•●•●•🔍'
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
 {text = '- اخفاء الامر ', callback_data =IdUser..'/delAmr'}, 
 },
 {
-{text = '🔺 صورتك القادمه🔻 ', callback_data =IdUser..'/ban3'},{text = '🔺 صورتك السابقه🔻 ', callback_data =IdUser..'/ban1'}, 
+{text = '📈 • صورتك القادمه • 📉', callback_data =IdUser..'/ban3'},{text = '📈 • صورتك السابقه • 📉 ', callback_data =IdUser..'/ban1'}, 
 },
 }
 LuaTele.deleteMessages(ChatId,{[1]= Msg_id})
@@ -13718,14 +13718,14 @@ if tonumber(IdUser) == tonumber(UserId) then
 local photo = LuaTele.getUserProfilePhotos(IdUser)
 local ban = LuaTele.getUser(IdUser)
 if photo.total_count > 1 then
-local ban_ns = '𝚑𝚎𝚛𝚎 𝚊𝚛𝚎 𝚢𝚘𝚞𝚛 𝚙𝚑𝚘𝚝𝚘𝚜'
+local ban_ns = '🔎•●•●•●•●صورك●•●•●•●•🔍'
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
 {text = '- اخفاء الامر ', callback_data =IdUser..'/delAmr'}, 
 },
 {
-{text = '🔺 صورتك القادمه🔻 ', callback_data =IdUser..'/ban4'},{text = '🔺 صورتك السابقه🔻 ', callback_data =IdUser..'/ban2'}, 
+{text = '📈 • صورتك القادمه • 📉', callback_data =IdUser..'/ban4'},{text = '📈 • صورتك السابقه • 📉 ', callback_data =IdUser..'/ban2'}, 
 },
 }
 LuaTele.deleteMessages(ChatId,{[1]= Msg_id})
@@ -13741,14 +13741,14 @@ if tonumber(IdUser) == tonumber(UserId) then
 local photo = LuaTele.getUserProfilePhotos(IdUser)
 local ban = LuaTele.getUser(IdUser)
 if photo.total_count > 1 then
-local ban_ns = '𝚑𝚎𝚛𝚎 𝚊𝚛𝚎 𝚢𝚘𝚞𝚛 𝚙𝚑𝚘𝚝𝚘𝚜'
+local ban_ns = '🔎•●•●•●•●صورك●•●•●•●•🔍'
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
 {text = '- اخفاء الامر ', callback_data =IdUser..'/delAmr'}, 
 },
 {
-{text = '🔺 صورتك القادمه🔻 ', callback_data =IdUser..'/ban5'},{text = '🔺 صورتك السابقه🔻 ', callback_data =IdUser..'/ban3'}, 
+{text = '📈 • صورتك القادمه • 📉', callback_data =IdUser..'/ban5'},{text = '📈 • صورتك السابقه • 📉 ', callback_data =IdUser..'/ban3'}, 
 },
 }
 LuaTele.deleteMessages(ChatId,{[1]= Msg_id})
@@ -13771,7 +13771,7 @@ keyboard.inline_keyboard = {
 {text = '- اخفاء الامر ', callback_data =IdUser..'/delAmr'}, 
 },
 {
-{text = '🔺 صورتك القادمه🔻 ', callback_data =IdUser..'/ban6'},{text = '🔺 صورتك السابقه🔻 ', callback_data =IdUser..'/ban4'}, 
+{text = '📈 • صورتك القادمه • 📉', callback_data =IdUser..'/ban6'},{text = '📈 • صورتك السابقه • 📉 ', callback_data =IdUser..'/ban4'}, 
 },
 }
 LuaTele.deleteMessages(ChatId,{[1]= Msg_id})
@@ -13787,14 +13787,14 @@ if tonumber(IdUser) == tonumber(UserId) then
 local photo = LuaTele.getUserProfilePhotos(IdUser)
 local ban = LuaTele.getUser(IdUser)
 if photo.total_count > 1 then
-local ban_ns = '𝚑𝚎𝚛𝚎 𝚊𝚛𝚎 𝚢𝚘𝚞𝚛 𝚙𝚑𝚘𝚝𝚘𝚜'
+local ban_ns = '🔎•●•●•●•●صورك●•●•●•●•🔍'
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
 {text = '- اخفاء الامر ', callback_data =IdUser..'/delAmr'}, 
 },
 {
-{text = '🔺 صورتك القادمه🔻 ', callback_data =IdUser..'/ban7'},{text = '🔺 صورتك السابقه🔻 ', callback_data =IdUser..'/ban5'}, 
+{text = '📈 • صورتك القادمه • 📉', callback_data =IdUser..'/ban7'},{text = '📈 • صورتك السابقه • 📉 ', callback_data =IdUser..'/ban5'}, 
 },
 }
 LuaTele.deleteMessages(ChatId,{[1]= Msg_id})
@@ -13811,14 +13811,14 @@ if tonumber(IdUser) == tonumber(UserId) then
 local photo = LuaTele.getUserProfilePhotos(IdUser)
 local ban = LuaTele.getUser(IdUser)
 if photo.total_count > 1 then
-local ban_ns = '𝚑𝚎𝚛𝚎 𝚊𝚛𝚎 𝚢𝚘𝚞𝚛 𝚙𝚑𝚘𝚝𝚘𝚜'
+local ban_ns = '🔎•●•●•●•●صورك●•●•●•●•🔍'
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
 {text = '- اخفاء الامر ', callback_data =IdUser..'/delAmr'}, 
 },
 {
-{text = '🔺 صورتك السابقه🔻 ', callback_data =IdUser..'/ban0'}, 
+{text = '📈 • صورتك السابقه • 📉 ', callback_data =IdUser..'/ban0'}, 
 },
 }
 LuaTele.deleteMessages(ChatId,{[1]= Msg_id})
