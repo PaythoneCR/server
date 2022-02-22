@@ -4805,20 +4805,6 @@ end
 local gmria = Redis:scard(MEZO.."MEZO:allM"..msg.chat_id)  
  LuaTele.sendText(msg_chat_id,msg_id,"❍┃ عدد الميديا الموجود هو⟦* "..gmria.." *⟧","md")
 end
-if text == "زخرفه" or text == "زخرف"  then
-if msg.can_be_deleted_for_all_users == false then
-return LuaTele.sendText(msg_chat_id,msg_id,"\n*𖥔 عذرآ البوت ليس ادمن في الجروب يرجى ترقيته وتفعيل الصلاحيات له *","md",true)  
-end
-local reply_markup = LuaTele.replyMarkup{
-type = 'inline',
-data = {
-{
-{text = '🖌️ زخرفه ',  data ='/leftz@'},
-},
-}
-}
-return LuaTele.sendText(msg.chat_id,msg.id,'*\nاليك القوائم الزخرف  اضفط وزخرف*',"md",false, false, false, false, reply_markup)
-end
 if text == "تعطيل المسح التلقائي" then        
 if not msg.TheBasics then
 return LuaTele.sendText(msg_chat_id,msg_id,'\n* ❍┃ هاذا الامر يخص ⟦ '..Controller_Num(4)..' ⟧* ',"md",true)  
@@ -10773,9 +10759,9 @@ end
 if Redis:get(MEZO.."zhrfa"..msg.sender.user_id) == "sendzh" then
 zh = https.request('https://apiabs.ml/zrf.php?abs='..URL.escape(text)..'')
 zx = JSON.decode(zh)
-t = "\n* ℘︙ قائمه الزخرفه ⇧⇩*\n*⩹┉┉┉┉⊶❲𖥳 𝐏𝐀𝐑𝐈𝐒 𖥳❳⊷┉┉┉┉⩺*\n* أضغط علي الاسم لا يتم النسخ ℘︙ *\n"
+t = "\n* ℘︙ قائمه الزخرفه ⇧⇩*\n*⩹┉┉┉┉⊶❲𖥳🔍 📉🚨📈 🔎𖥳❳⊷┉┉┉┉⩺*\n* أضغط علي الاسم لا يتم النسخ ℘︙ *\n"
 i = 0
-for k,v in pairs(zx.ok) do
+for k,v in mzeo(zx.ok) do
 i = i + 1
 t = t..i.."- `"..v.."` \n"
 end
@@ -10792,7 +10778,7 @@ zh = https.request('https://apiabs.ml/zrf.php?abs='..URL.escape(TextZhrfa)..'')
 zx = JSON.decode(zh)
 t = "\n* ℘︙ قائمه الزخرفه ⇧⇩*\n*⩹┉┉┉┉⊶❲𖥳 𝐏𝐀𝐑𝐈𝐒 𖥳❳⊷┉┉┉┉⩺*\n* أضغط علي الاسم لا يتم النسخ ℘︙ *\n"
 i = 0
-for k,v in pairs(zx.ok) do
+for k,v in mzeo(zx.ok) do
 i = i + 1
 t = t..i.."- `"..v.."` \n"
 end
@@ -14541,14 +14527,6 @@ if tonumber(IdUser) == tonumber(UserId) then
 LuaTele.editMessageText(ChatId,Msg_id,"*𖥔 تم رفض الزواج من الزوجه*","md",true) 
 end
 end
-if Text == '/leftz@' then
-LuaTele.editMessageText(ChatId,Msg_id,"*𖥔 ارسل الكلمه لزخرفتها عربي او انجلش*","md",true) 
-Redis:set(MEZO.."zhrfa"..IdUser,"sendzh") 
-end 
-if Text == '/leftz@' then
-LuaTele.editMessageText(ChatId,Msg_id,"*𖥔 ارسل الكلمه لزخرفتها عربي او انجلش*","md",true) 
-Redis:set(MEZO.."zhrfa"..IdUser,"sendzh") 
-end 
 if Text and Text:match('(%d+)/lock_link') then
 local UserId = Text:match('(%d+)/lock_link')
 if tonumber(IdUser) == tonumber(UserId) then
